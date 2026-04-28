@@ -5,6 +5,7 @@ body {
     color: #3e2723;
 }
 
+/* Header */
 header {
     background-color: #6d4c41;
     color: white;
@@ -12,17 +13,20 @@ header {
     padding: 20px;
 }
 
+/* Section */
 section {
     padding: 20px;
     max-width: 800px;
     margin: auto;
 }
 
+/* Gambar */
 img {
     width: 100%;
     border-radius: 10px;
 }
 
+/* Quote */
 .quote {
     background-color: #d7ccc8;
     padding: 15px;
@@ -31,10 +35,114 @@ img {
     margin: 20px 0;
 }
 
+/* Footer */
 footer {
     background-color: #6d4c41;
     color: white;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Tombol Login */
+.login-trigger {
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-trigger:hover {
+    background-color: #5a4bd6;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box login */
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Judul */
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.modal-content input:focus {
+    border-color: #6c5ce7;
+}
+
+/* Tombol submit */
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c5ce7;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #5a4bd6;
+}
+
+/* Tombol close */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

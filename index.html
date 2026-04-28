@@ -5,8 +5,25 @@
     <title>Hari Kartini</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<!-- Tombol Login -->
+<button class="login-trigger" onclick="document.getElementById('loginModal').style.display='flex'">
+    Login
+</button>
+
+<!-- Modal Login -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+</div>
 
 <header>
     <h1>Selamat Hari Kartini</h1>
@@ -23,7 +40,7 @@
 
     <h2>Foto R.A Kartini</h2>
     <img src="img/biodata.jpg" alt="R.A Kartini">
-
+    </section>
     <h2>Kata - Kata R.A Kartini</h2>
 
     <div class="quote">
